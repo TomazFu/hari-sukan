@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:ital,wght@1,700&display=swap');
+* {
+    box-sizing: border-box;
+    background-color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li, header a, header button, header h3, header p{
+    color: #ebebeb;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    border-bottom: 2px solid #FFF;
+ }
+
+header .logo {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.navbar li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover{
+    color: #E0115F;
+    border-bottom:2px solid #E0115FFF;
+}
+
+header h3 {
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+button {
+    color: #ebebeb;
+    font-family: 'Montserrat', sans-serif;
+    padding: 9px 25px 9px 25px;
+    background-color: #E0115FFF;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #E0115FCC;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-1 div, .container-1 h1{
+    display: inline-block;
+    padding: 2% 8%;
+    color: #ebebeb;
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+.container-1 h1 {
+    padding: 2% 10% 0% 10%;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.highlights-r div:hover, .highlights-j div:hover {
+    color: #6C757D;
+    cursor:default;
+}
+
+footer p{
+    text-align: left;
+    /* width: 99%; */
+    height: 100px;
+    padding-left: 3%;
+    padding-top: 3%;
+    background-color: #131518;
+    /* margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10%;
+    bottom: 0;
+    position: fixed; */
+    color: #ebebeb;
+    font-style: italic;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+    padding-top: 3%;
+    /* border-top: 2px solid #fff; */
+}
+
+.login-form {
+    width: 60%;
+    padding: 40px;
+    margin-top: 5%;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #ffffff;
+    text-align: left;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px #00000033;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-form p {
+    color: #f00;
+    background-color: transparent;
+}
+
+.login-form button{
+    color: #212529;
+    margin-top: 7%;
+    background-color: #ebebeb;
+}
+.login-form button:hover {
+    color: #ebebeb;
+    background-color: #E0115FCC;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #FFF inset !important;
+}
+
+.login-form img {
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#ffffff;
+}
+
+.login-form .input-box-1 {
+    border: none;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: left;
+    border-bottom: 2px solid #81808e;
+    padding: 10px 10px;
+    width: 200px;
+    outline: none;
+    color: #212529;   
+    transition: all 0.3s ease 0s;
+    cursor: default;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-form .input-box-1:focus, .login-form .input-box-1:hover {
+    border-bottom: 2px solid #E0115F;
+ 
+}
+
+.login-form label{
+    color: #212529;
+    background-color: #fff;
+}
+
+.login-form h2 {
+    text-align: left;
+    color:#212529;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.container-2 {
+    margin: 2%;
+}
+
+.printpage {
+    text-align: right;
+    background-color: transparent;
+}
+
+.login-form h3 {
+    text-align: left;
+    color:#212529;
+    background-color: #fff;
+}
+
+.container-3 {
+    margin: 2%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.menu-link {
+    position: relative;
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 48px;
+    color:#ebebeb;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-link:after {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    width: 0px;
+    background: linear-gradient(90deg, rgba(68,15,80,1) 0%, rgba(224,17,95,1) 100%);
+}
+
+.menu-link:hover:after {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.container-4 {
+    margin: 2%;
+}
+
+.judgelist {
+    width: 60%;
+    padding: 40px;
+    margin-top: 3%;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #ffffff;
+    text-align: left;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px #00000033;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.judgelist h6 {
+    color: #f00;
+    background-color: transparent;
+    margin: 5px 0;
+}
+
+.judgelist h3 {
+    color: #212529;
+    background-color: transparent;
+    padding-bottom: 20px;
+}
+
+.judgelist p {
+    color: #212529;
+    background-color: transparent;
+    margin: 5px 0;
+
+}
+
+.file-form {
+    width: 60%;
+    padding: 40px;
+    margin-top: 3%;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #ffffff;
+    text-align: left;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px #00000033;
+    font-family: 'Montserrat', sans-serif;
+}
+.file-form input {
+    background-color: transparent;
+}
+
+.form-input {
+    position: absolute;
+}
+
+.form-icon {
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+.file-form h2{
+    text-align: left;
+    color:#212529;
+    background-color: transparent;
+    padding-bottom: 20px;
+}
+
+.file-form .file-input {
+    color: #212529;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.file-form p {
+    padding-top: 20px;
+    color: #f00;
+    background-color: transparent;
+}
+
+.file-form button {
+    color: #212529;
+    margin-top: 20px;
+    background-color: #ebebeb;
+}
+
+.file-form button:hover {
+    color: #ebebeb;
+    background-color: #E0115FCC;
+}
